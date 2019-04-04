@@ -1,0 +1,8 @@
+Retreiving Android keystore for @hridaykkeyal/manipal
+Writing keystore to /home/hridaykkeyal/react/manipal/manipal.jks
+Done writing keystore to disk
+Save these important values as well:
+
+  Keystore password: 7af913d1728641adb4434376355781ac
+  Key alias:         QGhyaWRheWtrZXlhbC9tYW5pcGFs
+  Key password:      0609650779ab482aad3060b320cd5a68

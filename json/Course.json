@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "name": "Data Mining",
+      "id": "CS1581"
+    },
+    {
+      "name": "Software Engineering",
+      "id": "CS1582"
+    },
+    {
+      "name": "Mobile Computing",
+      "id": "CS1583"
+    },
+    {
+      "name": "Computer Networks",
+      "id": "CS1584"
+    },
+    {
+      "name": "Data Structures",
+      "id": "CS1585"
+    },
+    {
+      "name": "Data Science",
+      "id": "CS1586"
+    }
+  ]
+}

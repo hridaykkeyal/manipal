@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "arr": ["CS1581"],
+      "data": {
+        "chapter": 1,
+        "name": "Data Mining",
+        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4",
+        "description": "Data Mining"
+      }
+    },
+    {
+      "arr": ["CS1581"],
+      "data": {
+        "chapter": 2,
+        "name": "Data Mining",
+        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4",
+        "description": "Data Mining"
+      }
+    },
+    {
+      "arr": ["CS1582"],
+      "data": {
+        "chapter": 1,
+        "name": "Sofware Engineering",
+        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4",
+        "description": "Data Mining"
+      }
+    },
+    {
+      "arr": ["CS1582"],
+      "data": {
+        "chapter": 2,
+        "name": "Sofware Engineering",
+        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4",
+        "description": "Data Mining"
+      }
+    },
+    {
+      "arr": ["CS1583"],
+      "data": {
+        "chapter": 1,
+        "name": "Mobile Computing",
+        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4",
+        "description": "Data Mining"
+      }
+    },
+    {
+      "arr": ["CS1583"],
+      "data": {
+        "chapter": 2,
+        "name": "Mobile Computing",
+        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4",
+        "description": "Data Mining"
+      }
+    }
+  ]
+}
