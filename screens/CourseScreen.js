@@ -1,13 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { StatusBar, Dimensions, ScrollView, ActivityIndicator } from 'react-native';
-import { Button, ListItem } from 'react-native-elements';
+import { ScrollView, ActivityIndicator } from 'react-native';
+import { ListItem } from 'react-native-elements';
 import { systemWeights } from 'react-native-typography';
 
 import { HEADER, BACK } from '../services/Colors';
-
-const window = Dimensions.get('window');
-const heightProgress = (window.height/2)-StatusBar.currentHeight-60
 
 export default class CourseScreen extends React.Component {
 

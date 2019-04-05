@@ -1,9 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { StatusBar, WebView, Dimensions, ActivityIndicator } from 'react-native';
 import { Video, ScreenOrientation } from 'expo';
-import { systemWeights } from 'react-native-typography';
-import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
 export default class VideoScreen extends React.Component {
 

@@ -1,15 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { StatusBar, Dimensions, ActivityIndicator } from 'react-native';
-import { Permissions, Font } from 'expo';
-import { Button, ListItem } from 'react-native-elements';
 import { systemWeights } from 'react-native-typography';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
 import { HEADER, BACK } from '../services/Colors';
-
-const window = Dimensions.get('window');
-const heightProgress = (window.height/2)-StatusBar.currentHeight-60
 
 export default class HomeScreen extends React.Component {
 
