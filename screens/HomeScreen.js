@@ -59,7 +59,7 @@ export default class HomeScreen extends React.Component {
               ...systemWeights.light,
               textAlign: 'center'
             }}>
-              Now all the course videos of Manipal University Jaipur{'\n'}is available to you directly on your smartphone
+              Now all the course videos of Manipal University Jaipur{'\n'}are available to you directly on your smartphone
             </Text>
           </View>
       </View>

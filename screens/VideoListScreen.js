@@ -79,7 +79,7 @@ export default class VideoListScreen extends React.Component {
                 <View key={index.toString()}>
                 {this.check(id, item.arr) ?
                 <ListItem
-                  underlayColor={'white'}
+                  underlayColor={BACK}
                   onPress={() => this._onPress(item)}
                   containerStyle={{
                     backgroundColor: '#eee',

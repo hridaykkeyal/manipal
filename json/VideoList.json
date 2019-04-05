@@ -5,8 +5,7 @@
       "data": {
         "chapter": 1,
         "name": "Data Mining",
-        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4",
-        "description": "Data Mining"
+        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4"
       }
     },
     {
@@ -14,8 +13,7 @@
       "data": {
         "chapter": 2,
         "name": "Data Mining",
-        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4",
-        "description": "Data Mining"
+        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4"
       }
     },
     {
@@ -23,8 +21,7 @@
       "data": {
         "chapter": 1,
         "name": "Sofware Engineering",
-        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4",
-        "description": "Data Mining"
+        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4"
       }
     },
     {
@@ -32,8 +29,7 @@
       "data": {
         "chapter": 2,
         "name": "Sofware Engineering",
-        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4",
-        "description": "Data Mining"
+        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4"
       }
     },
     {
@@ -41,8 +37,7 @@
       "data": {
         "chapter": 1,
         "name": "Mobile Computing",
-        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4",
-        "description": "Data Mining"
+        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4"
       }
     },
     {
@@ -50,8 +45,55 @@
       "data": {
         "chapter": 2,
         "name": "Mobile Computing",
-        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4",
-        "description": "Data Mining"
+        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4"
+      }
+    },
+    {
+      "arr": ["CS1584"],
+      "data": {
+        "chapter": 1,
+        "name": "Computer Networks",
+        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4"
+      }
+    },
+    {
+      "arr": ["CS1584"],
+      "data": {
+        "chapter": 2,
+        "name": "Computer Networks",
+        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4"
+      }
+    },
+    {
+      "arr": ["CS1585"],
+      "data": {
+        "chapter": 1,
+        "name": "Data Structures",
+        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4"
+      }
+    },
+    {
+      "arr": ["CS1585"],
+      "data": {
+        "chapter": 2,
+        "name": "Data Structures",
+        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4"
+      }
+    },
+    {
+      "arr": ["CS1586"],
+      "data": {
+        "chapter": 1,
+        "name": "Data Science",
+        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4"
+      }
+    },
+    {
+      "arr": ["CS1586"],
+      "data": {
+        "chapter": 2,
+        "name": "Data Science",
+        "url": "https://hridaykkeyal.000webhostapp.com/video/video.mp4"
       }
     }
   ]
