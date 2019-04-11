@@ -1,10 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { ScrollView, ActivityIndicator } from 'react-native';
+import { StatusBar, Dimensions, ScrollView, ActivityIndicator } from 'react-native';
 import { ListItem } from 'react-native-elements';
 import { systemWeights } from 'react-native-typography';
 
 import { HEADER, BACK } from '../services/Colors.js';
+
+const window = Dimensions.get('window');
+const heightProgress = (window.height/2)-StatusBar.currentHeight-60
 
 export default class VideoListScreen extends React.Component {
 
@@ -48,7 +51,7 @@ export default class VideoListScreen extends React.Component {
 
     navigate('Video',
       { 
-        data: item.data
+        data: item
       }
     )
   }
@@ -64,14 +67,14 @@ export default class VideoListScreen extends React.Component {
         {this.state.data == null ?
 
           <View style={{paddingTop: heightProgress}}>
-            <ActivityIndicator size={50} color='black'/>
+            <ActivityIndicator size={50} color='#eee'/>
           </View>
 
         :
 
           <ScrollView>
             {
-              this.state.data.data.map((item, index) => (
+              this.state.data.map((item, index) => (
                 <View key={index.toString()}>
                 {this.check(id, item.arr) ?
                 <ListItem
@@ -86,14 +89,14 @@ export default class VideoListScreen extends React.Component {
                     borderColor: '#ddd',
                     borderWidth: 0
                   }}
-                  title={`Chapter ${item.data.chapter}`}
+                  title={`Chapter ${item.chapter}`}
                   titleStyle={{
                     color: 'black',
                     fontFamily: 'Roboto',
                     fontSize: 16,
                     ...systemWeights.light,
                   }}
-                  subtitle={item.data.name}
+                  subtitle={item.name}
                   subtitleStyle={{
                     color: 'black',
                     fontFamily: 'Roboto',

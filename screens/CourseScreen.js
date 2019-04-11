@@ -1,10 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { ScrollView, ActivityIndicator } from 'react-native';
+import { StatusBar, Dimensions, ScrollView, ActivityIndicator } from 'react-native';
 import { ListItem } from 'react-native-elements';
 import { systemWeights } from 'react-native-typography';
 
 import { HEADER, BACK } from '../services/Colors';
+
+const window = Dimensions.get('window');
+const heightProgress = (window.height/2)-StatusBar.currentHeight-60
 
 export default class CourseScreen extends React.Component {
 
@@ -29,10 +32,6 @@ export default class CourseScreen extends React.Component {
     data: require('../json/Course.json')
   }
 
-	componentDidMount = () => {
-
-  }
-
   _onPress = (item) => {
 
     const { navigate } = this.props.navigation;
@@ -55,14 +54,14 @@ export default class CourseScreen extends React.Component {
         {this.state.data == null ?
 
           <View style={{paddingTop: heightProgress}}>
-            <ActivityIndicator size={50} color='black'/>
+            <ActivityIndicator size={50} color='#eee'/>
           </View>
 
         :
 
           <ScrollView>
             {
-              this.state.data.data.map((item, index) => (
+              this.state.data.map((item, index) => (
                 <ListItem
                   key={index.toString()}
                   underlayColor={BACK}
@@ -76,7 +75,6 @@ export default class CourseScreen extends React.Component {
                     borderColor: '#ddd',
                     borderWidth: 0
                   }}
-                  // leftAvatar={{ source: require('../images/cap.jpg') }}
                   title={item.id}
                   titleStyle={{
                     color: 'black',
