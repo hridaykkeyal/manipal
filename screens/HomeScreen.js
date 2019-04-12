@@ -45,14 +45,8 @@ export default class HomeScreen extends React.Component {
           />
         </View>
 
-        <View style={{borderRadius: 4, marginTop: wp(3), marginHorizontal: wp(3), paddingVertical: 20, paddingHorizontal: 10, backgroundColor: '#eee'}}>
-            <Text style={{
-              color: 'black',
-              fontFamily: 'Roboto',
-              fontSize: wp(3.6),
-              ...systemWeights.light,
-              textAlign: 'center'
-            }}>
+        <View style={styles.view}>
+            <Text style={styles.text}>
               Now all the course videos of Manipal University Jaipur{'\n'}are available to you directly on your smartphone
             </Text>
           </View>
@@ -66,5 +60,22 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: BACK
-	}
+  },
+
+  view: {
+    borderRadius: 4, 
+    marginTop: wp(3), 
+    marginHorizontal: wp(3), 
+    paddingVertical: 20, 
+    paddingHorizontal: 10, 
+    backgroundColor: '#eee'
+  },
+  
+  text: {
+    color: 'black',
+    fontFamily: 'Roboto',
+    fontSize: wp(3.6),
+    ...systemWeights.light,
+    textAlign: 'center'
+  }
 });

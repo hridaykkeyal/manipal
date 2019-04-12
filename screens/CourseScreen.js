@@ -5,9 +5,7 @@ import { ListItem } from 'react-native-elements';
 import { systemWeights } from 'react-native-typography';
 
 import { HEADER, BACK } from '../services/Colors';
-
-const window = Dimensions.get('window');
-const heightProgress = (window.height/2)-StatusBar.currentHeight-60
+import Indicator from '../components/Indicator';
 
 export default class CourseScreen extends React.Component {
 
@@ -52,13 +50,8 @@ export default class CourseScreen extends React.Component {
       <View style={styles.container}>
 
         {this.state.data == null ?
-
-          <View style={{paddingTop: heightProgress}}>
-            <ActivityIndicator size={50} color='#eee'/>
-          </View>
-
+          <Indicator/>
         :
-
           <ScrollView>
             {
               this.state.data.map((item, index) => (
@@ -66,36 +59,16 @@ export default class CourseScreen extends React.Component {
                   key={index.toString()}
                   underlayColor={BACK}
                   onPress={() => this._onPress(item)}
-                  containerStyle={{
-                    backgroundColor: '#eee',
-                    marginTop: 14,
-                    marginHorizontal: 14,
-                    elevation: 0,
-                    borderRadius: 4,
-                    borderColor: '#ddd',
-                    borderWidth: 0
-                  }}
+                  containerStyle={styles.listContainer}
                   title={item.id}
-                  titleStyle={{
-                    color: 'black',
-                    fontFamily: 'Roboto',
-                    fontSize: 16,
-                    ...systemWeights.light,
-                  }}
+                  titleStyle={styles.listTitle}
                   subtitle={item.name}
-                  subtitleStyle={{
-                    color: 'black',
-                    fontFamily: 'Roboto',
-                    fontSize: 16,
-                    ...systemWeights.light,
-                    paddingTop: 4
-                  }}
+                  subtitleStyle={styles.listSubtitle}
                   chevron={true}
                 />
               ))
             }
             <View style={{paddingTop: 10}}/>
-
           </ScrollView>
         }
 
@@ -109,5 +82,30 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
 		backgroundColor: BACK
-	}
+  },
+  
+  listContainer: {
+    backgroundColor: '#eee',
+    marginTop: 14,
+    marginHorizontal: 14,
+    elevation: 0,
+    borderRadius: 4,
+    borderColor: '#ddd',
+    borderWidth: 0
+  },
+
+  listTitle: {
+    color: 'black',
+    fontFamily: 'Roboto',
+    fontSize: 16,
+    ...systemWeights.light
+  },
+
+  listSubtitle: {
+    color: 'black',
+    fontFamily: 'Roboto',
+    fontSize: 16,
+    ...systemWeights.light,
+    paddingTop: 4
+  }
 });
