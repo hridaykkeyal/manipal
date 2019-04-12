@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { StatusBar, Dimensions, ScrollView, ActivityIndicator } from 'react-native';
+import { ScrollView } from 'react-native';
 import { ListItem } from 'react-native-elements';
 import { systemWeights } from 'react-native-typography';
 
