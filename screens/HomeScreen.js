@@ -47,7 +47,7 @@ export default class HomeScreen extends React.Component {
 
         <View style={styles.view}>
             <Text style={styles.text}>
-              Now ll the course videos of Manipal University Jaipur{'\n'}are available to you directly on your smartphone
+              Now all the course videos of Manipal University Jaipur{'\n'}are available to you directly on your smartphone
             </Text>
           </View>
       </View>
